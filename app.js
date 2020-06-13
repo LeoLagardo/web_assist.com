@@ -99,7 +99,7 @@ function readOutLoud(message) {
         speech.text = 'the temperature is ';
 
         var ourRequest = new XMLHttpRequest();
-        ourRequest.open('GET', 'http://api.openweathermap.org/data/2.5/weather?q=Bengaluru&units=metric&appid=b3c25358b477401fc8b67083de1e063c');
+        ourRequest.open('GET', 'https://api.openweathermap.org/data/2.5/weather?q=Bengaluru&units=metric&appid=b3c25358b477401fc8b67083de1e063c');
         ourRequest.onload = function () {
 
 
