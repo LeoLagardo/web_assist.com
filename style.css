@@ -1,0 +1,141 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+@font-face{
+    font-family: nexaLight;
+    src: url('./font/Nexa/Nexa/Nexa_V2_2020/TTF/NexaDemo-Light.ttf');
+}
+
+@font-face{
+    font-family: nexaBold;
+    src: url('./font/Nexa/Nexa/Nexa_V2_2020/TTF/NexaDemo-Bold.ttf');
+}
+
+
+body {
+    /*background-color: rgb(158, 203, 241);*/
+    background-image: url('digital-assistant.jpg');
+    font-family: nexaBold;
+
+}
+
+.talk {
+    background-color: rgb(189, 26, 26);
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+
+}
+
+
+#press {
+    position: absolute;
+    left: 40%;
+    top: 15px;
+    animation: 1s linear infinite size_effect;
+}
+
+@keyframes size_effect {
+    0% {
+        transform: scale(1.0);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+button {
+
+    /*text-align: center;*/
+    outline-style: none;
+    position: absolute;
+    top: 228px;
+    left: 552px;
+    border: none;
+    border-radius: 100%;
+    box-shadow: 0 8px 16px 0 rgba(25, 129, 136, 0.2), 0 6px 20px 0 rgba(20, 160, 216, 0.507);
+    transition: all .2s ease-in-out;
+
+}
+
+button:hover {
+
+    transform: scale(1.1);
+}
+
+.content {
+    position: absolute;
+    top: 240px;
+    left: 820px;
+}
+
+.bot-content {
+    position: absolute;
+    top: 560px;
+    left: 552px;
+    /*display: none;*/
+}
+
+.bot-content p {
+    animation: 2s linear infinite blink_effect;
+}
+
+@keyframes blink_effect {
+    0% {
+        visibility: hidden;
+    }
+
+    50% {
+        visibility: visible;
+        opacity: .2;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+#board {
+    display: none;
+    position: absolute;
+    left: 80%;
+    top: 100px;
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+#commands {
+
+    position: absolute;
+    top: 150px;
+    left: 80%;
+}
+
+@media (max-width: 1024px) {
+
+    #board,
+    #commands {
+        left: 0%;
+    }
+}
+
+footer {
+    position: absolute;
+    bottom: 1px;
+    right: 1px;
+    color: rgba(2, 2, 2, 0.788);
+}
