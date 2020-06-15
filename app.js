@@ -69,14 +69,14 @@ function readOutLoud(message) {
     }
 
     //youtube
-    if (message.includes('youtube')) {
-        speech.text = 'showing email';
+    if (message.includes('YouTube')) {
+        speech.text = 'opening . . ';
         window.open('http://youtube.in');
     }
 
 
     //email
-    if (message.includes('email') || message.includes('gmail')) {
+    if (message.includes('email') || message.includes('Gmail')) {
         speech.text = 'showing email';
         window.open('http://mail.google.com');
     }
