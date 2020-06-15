@@ -68,6 +68,13 @@ function readOutLoud(message) {
         window.open();
     }
 
+    //youtube
+    if (message.includes('youtube')) {
+        speech.text = 'showing email';
+        window.open('http://youtube.in');
+    }
+
+
     //email
     if (message.includes('email') || message.includes('gmail')) {
         speech.text = 'showing email';
