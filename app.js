@@ -81,6 +81,7 @@ function readOutLoud(message) {
 
         speech.text = 'Here\'s the commands';
         document.getElementById('board').style.display = "block";
+        document.getElementById('show-comm').style.display = "none";
 
         var ourRequest = new XMLHttpRequest();
         ourRequest.open('GET', 'script.json');
