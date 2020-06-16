@@ -1,9 +1,6 @@
 var commandList = document.getElementById("commands");
 
 
-
-
-
 const btn = document.querySelector('.talk');
 const content = document.querySelector('.content');
 const bot_content = document.querySelector('bot-content');
@@ -12,13 +9,11 @@ const board = document.querySelector('.board');
 
 const greetings = [
     'Hi, how are you doing today ?',
-    'Hello !!'
+    'Hello !!',
+    'Hi, how can I help you?'
 
 ];
 
-const weather = [
-
-];
 
 
 
@@ -142,7 +137,7 @@ function readOutLoud(message) {
 
     speech.volume = 1;
     speech.rate = 1;
-    speech.pitch = 5;
+    speech.pitch = 1;
 
     window.speechSynthesis.speak(speech);
 }
