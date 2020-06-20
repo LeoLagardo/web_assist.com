@@ -14,10 +14,6 @@ const greetings = [
 
 ];
 
-
-
-
-
 const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
 const recognition = new SpeechRecognition();
 
@@ -69,6 +65,12 @@ function readOutLoud(message) {
         window.open('http://youtube.in');
     }
 
+    //shopping
+    if (message.includes('Shopping')) {
+        speech.text = 'opening . . ';
+        window.open('http://amazon.in');
+    }
+
 
     //email
     if (message.includes('email') || message.includes('Gmail')) {
@@ -83,6 +85,7 @@ function readOutLoud(message) {
         document.getElementById('board').style.display = "block";
         document.getElementById('show-comm').style.display = "none";
 
+        //ajax request
         var ourRequest = new XMLHttpRequest();
         ourRequest.open('GET', 'script.json');
         ourRequest.onload = function () {
@@ -92,13 +95,14 @@ function readOutLoud(message) {
 
         ourRequest.send();
 
+
     }
 
     //weather
 
     if (message.includes('weather') || message.includes('temperature')) {
 
-        //speech.text = 'Here\'s the commands';
+       
         speech.text = 'the temperature is ';
 
         var ourRequest = new XMLHttpRequest();
