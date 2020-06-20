@@ -78,6 +78,12 @@ function readOutLoud(message) {
         window.open('http://mail.google.com');
     }
 
+    //calendar
+    if (message.includes('calendar') || message.includes('Calendar')) {
+        speech.text = 'showing calendar';
+        window.open('https://calendar.google.com/');
+    }
+
     //show commands
     if (message.includes('commands') || message.includes('command')) {
 
