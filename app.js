@@ -66,7 +66,7 @@ function readOutLoud(message) {
     }
 
     //shopping
-    if (message.includes('Shopping')) {
+    if (message.includes('Shopping') || message.includes('shopping')) {
         speech.text = 'opening . . ';
         window.open('http://amazon.in');
     }
