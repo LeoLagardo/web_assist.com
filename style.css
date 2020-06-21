@@ -3,12 +3,13 @@
     padding: 0px;
     overflow: hidden;
 }
-@font-face{
+
+@font-face {
     font-family: nexaLight;
     src: url('./font/Nexa/Nexa/Nexa_V2_2020/TTF/NexaDemo-Light.ttf');
 }
 
-@font-face{
+@font-face {
     font-family: nexaBold;
     src: url('./font/Nexa/Nexa/Nexa_V2_2020/TTF/NexaDemo-Bold.ttf');
 }
@@ -16,7 +17,7 @@
 
 body {
     /*background-color: rgb(158, 203, 241);*/
-    background-image: url('digital-assistant.jpg');
+    background-image: url('./img/digital-assistant.jpg');
     font-family: nexaBold;
 
 }
@@ -129,35 +130,69 @@ footer {
     position: absolute;
     bottom: 1px;
     right: 1px;
+    font-size: 10px;
     color: rgba(2, 2, 2, 0.788);
 }
 
+.best-exp {
+    display: none;
+    border-radius: 25px;
+    border: 2px solid Black;
+    padding: 15px;
+    margin: 20px;
+    width: 200px;
+    height: 100px;
+    background-color: #3b3759;
+    box-shadow: 5px 5px 2px #a2d2ee;
+    color: white;
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    z-index: 1;
+
+}
+
+.best-exp p{
+    text-align: center;
+}
+
+.best-exp img {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    float: right;
+    top: -10px;
+    right: -10px;
+}
 
 @media (max-width: 1024px) {
 
-    body{
+    body {
         background-image: none;
-       background-color: #388683;
+        background-color: #388683;
     }
-    
 
-    .talk{
-        top: 60%;
+
+    .talk {
+        position: absolute;
+        top: 40%;
         left: 50%;
     }
 
-    .bot-content{
+    .bot-content {
         left: 30%;
     }
 
-    .content{
+    .content {
         left: 30%;
-        top:70%;
+        top: 70%;
     }
 
-    #board, #commands{
-        left:0%;
+    #board,
+    #commands {
+        left: 0%;
+    }
+    .best-exp {
+        display: block;
     }
 }
-
-

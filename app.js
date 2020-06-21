@@ -5,6 +5,7 @@ const btn = document.querySelector('.talk');
 const content = document.querySelector('.content');
 const bot_content = document.querySelector('bot-content');
 const board = document.querySelector('.board');
+const exp = document.querySelector('.best-exp');
 
 
 const greetings = [
@@ -41,7 +42,9 @@ btn.addEventListener('click', () => {
     document.getElementById('press').style.display = "none";
 });
 
-
+function hide(){
+    exp.style.display="none";
+}
 
 function readOutLoud(message) {
     const speech = new SpeechSynthesisUtterance();
