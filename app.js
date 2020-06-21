@@ -62,6 +62,18 @@ function readOutLoud(message) {
         window.open();
     }
 
+    //close tab
+    if (message.includes('close tab') || message.includes('Close tab')) {
+        speech.text = 'closing . .';
+        window.close();
+    }
+
+    //reload tab
+    if (message.includes('reload')) {
+        speech.text = 'reloading . .';
+        window.location.reload();
+    }
+
     //youtube
     if (message.includes('YouTube')) {
         speech.text = 'opening . . ';
