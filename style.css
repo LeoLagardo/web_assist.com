@@ -38,7 +38,7 @@ body {
 
 #press {
     position: absolute;
-    left: 40%;
+    left: 35%;
     top: 15px;
     animation: 1s linear infinite size_effect;
 }
@@ -177,7 +177,7 @@ footer {
     .talk {
         position: absolute;
         top: 40%;
-        left: 50%;
+        left: 40%;
     }
 
     .bot-content {
