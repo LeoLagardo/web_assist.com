@@ -1,4 +1,4 @@
-var commandList = document.getElementById("commands");
+let commandList = document.getElementById("commands");
 
 
 const btn = document.querySelector('.talk');
@@ -69,7 +69,7 @@ function readOutLoud(message) {
     }
 
     //reload tab
-    if (message.includes('reload')) {
+    if (message.includes('reload') || message.includes('refresh')) {
         speech.text = 'reloading . .';
         window.location.reload();
     }
@@ -107,10 +107,10 @@ function readOutLoud(message) {
         document.getElementById('show-comm').style.display = "none";
 
         //ajax request
-        var ourRequest = new XMLHttpRequest();
+        let ourRequest = new XMLHttpRequest();
         ourRequest.open('GET', 'script.json');
         ourRequest.onload = function () {
-            var ourData = JSON.parse(ourRequest.responseText);
+            let ourData = JSON.parse(ourRequest.responseText);
             renderHTML(ourData);
         };
 
@@ -126,13 +126,13 @@ function readOutLoud(message) {
        
         speech.text = 'the temperature is ';
 
-        var ourRequest = new XMLHttpRequest();
+        let ourRequest = new XMLHttpRequest();
         ourRequest.open('GET', 'https://api.openweathermap.org/data/2.5/weather?q=Bengaluru&units=metric&appid=b3c25358b477401fc8b67083de1e063c');
         ourRequest.onload = function () {
 
 
-            var ourData = JSON.parse(ourRequest.responseText);
-            var temp = ourData.main.temp;
+            let ourData = JSON.parse(ourRequest.responseText);
+            let temp = ourData.main.temp;
             content.innerHTML = ourData.main.temp + " C" + "<br>" + ourData.weather[0].description;
 
 
@@ -149,10 +149,10 @@ function readOutLoud(message) {
 
     //render command list form script.json
     function renderHTML(data) {
-        var HTMLstring = " ";
+        let HTMLstring = " ";
 
-        for (var i = 0; i < data.length; i++) {
-            for (var j = 0; j < data[i].commandList.length; j++) {
+        for (let i = 0; i < data.length; i++) {
+            for (let j = 0; j < data[i].commandList.length; j++) {
                 HTMLstring += "<li>" + data[i].commandList[j] + "</li>";
             }
         }

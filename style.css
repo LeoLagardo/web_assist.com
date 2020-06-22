@@ -37,9 +37,8 @@ body {
 
 
 #press {
-    position: absolute;
-    left: 35%;
-    top: 15px;
+    display: flex;
+    justify-content: center;
     animation: 1s linear infinite size_effect;
 }
 
@@ -146,7 +145,7 @@ footer {
     color: white;
     position: absolute;
     top: 35%;
-    left: 35%;
+    left: 20%;
     z-index: 1;
     opacity: .9;
 

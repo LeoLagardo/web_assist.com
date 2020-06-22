@@ -3,6 +3,7 @@
     [
         "say Hello!", 
         "open new tab",
+        "reload tab",
         "open YouTube",
         "show email",
         "How is the weather",
