@@ -3,7 +3,7 @@ let commandList = document.getElementById("commands");
 
 const btn = document.querySelector('.talk');
 const content = document.querySelector('.content');
-const bot_content = document.querySelector('bot-content');
+const bot_content = document.querySelector('.bot-content');
 const board = document.querySelector('.board');
 const exp = document.querySelector('.best-exp');
 
