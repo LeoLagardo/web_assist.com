@@ -1,4 +1,4 @@
-[{
+{
   "hotel_name": "Octave Bengaluru",
   "bookingId": "87654321",
   "status": "new",
@@ -47,4 +47,4 @@
       }
     }
   ]
-}]
+}
