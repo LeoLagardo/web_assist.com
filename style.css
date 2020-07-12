@@ -18,7 +18,7 @@
 body {
     /*background-color: rgb(158, 203, 241);*/
     background-image: url('./img/digital-assistant.jpg');
-    
+
     font-family: nexaBold;
 
 }
@@ -35,8 +35,6 @@ body {
     margin: 4px 2px;
 
 }
-
-
 
 #press {
     display: flex;
@@ -98,8 +96,8 @@ button:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-    
+
+
 }
 
 .bot-content p {
@@ -162,7 +160,7 @@ footer {
 
 }
 
-.best-exp p{
+.best-exp p {
     text-align: center;
 }
 
@@ -190,9 +188,7 @@ footer {
         left: 40%;
     }
 
-    .bot-content {
-        
-    }
+    
 
     .content {
         left: 30%;
@@ -203,6 +199,7 @@ footer {
     #commands {
         left: 0%;
     }
+
     .best-exp {
         display: block;
     }
